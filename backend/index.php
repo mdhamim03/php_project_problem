@@ -1,134 +1,8 @@
 
 <?php
-    include './backend_inc/backendHeader.php';
+    include './backend_inc/backendHeader.php'
 ?>
-<section class="main_content dashboard_part large_header_bg">
-        <!-- menu  -->
-    <div class="container-fluid no-gutters">
-        <div class="row">
-            <div class="col-lg-12 p-0 ">
-                <div class="header_iner d-flex justify-content-between align-items-center">
-                    <div class="sidebar_icon d-lg-none">
-                        <i class="ti-menu"></i>
-                    </div>
-                    <div class="line_icon open_miniSide d-none d-lg-block">
-                        <img src="img/line_img.png" alt="">
-                    </div>
-                    <div class="serach_field-area d-flex align-items-center">
-                        <div class="search_inner">
-                            <form action="index.html#">
-                                <div class="search_field">
-                                    <input type="text" placeholder="Search">
-                                </div>
-                                <button type="submit"> <img src="img/icon/icon_search.svg" alt=""> </button>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="header_right d-flex justify-content-between align-items-center">
-                        <div class="header_notification_warp d-flex align-items-center">
-                            <li>
-                                <a class="bell_notification_clicker" href="index.html#"> <img src="img/icon/bell.svg" alt="">
-                                    <span>2</span>
-                                </a>
-                                <!-- Menu_NOtification_Wrap  -->
-                            <div class="Menu_NOtification_Wrap">
-                                <div class="notification_Header">
-                                    <h4>Notifications</h4>
-                                </div>
-                                <div class="Notification_body">
-                                    <!-- single_notify  -->
-                                    <div class="single_notify d-flex align-items-center">
-                                        <div class="notify_thumb">
-                                            <a href="index.html#"><img src="img/staf/2.png" alt=""></a>
-                                        </div>
-                                        <div class="notify_content">
-                                            <a href="index.html#"><h5>Cool Marketing </h5></a>
-                                            <p>Lorem ipsum dolor sit amet</p>
-                                        </div>
-                                    </div>
-                                    <!-- single_notify  -->
-                                    <div class="single_notify d-flex align-items-center">
-                                        <div class="notify_thumb">
-                                            <a href="index.html#"><img src="img/staf/4.png" alt=""></a>
-                                        </div>
-                                        <div class="notify_content">
-                                            <a href="index.html#"><h5>Awesome packages</h5></a>
-                                            <p>Lorem ipsum dolor sit amet</p>
-                                        </div>
-                                    </div>
-                                    <!-- single_notify  -->
-                                    <div class="single_notify d-flex align-items-center">
-                                        <div class="notify_thumb">
-                                            <a href="index.html#"><img src="img/staf/3.png" alt=""></a>
-                                        </div>
-                                        <div class="notify_content">
-                                            <a href="index.html#"><h5>what a packages</h5></a>
-                                            <p>Lorem ipsum dolor sit amet</p>
-                                        </div>
-                                    </div>
-                                    <!-- single_notify  -->
-                                    <div class="single_notify d-flex align-items-center">
-                                        <div class="notify_thumb">
-                                            <a href="index.html#"><img src="img/staf/2.png" alt=""></a>
-                                        </div>
-                                        <div class="notify_content">
-                                            <a href="index.html#"><h5>Cool Marketing </h5></a>
-                                            <p>Lorem ipsum dolor sit amet</p>
-                                        </div>
-                                    </div>
-                                    <!-- single_notify  -->
-                                    <div class="single_notify d-flex align-items-center">
-                                        <div class="notify_thumb">
-                                            <a href="index.html#"><img src="img/staf/4.png" alt=""></a>
-                                        </div>
-                                        <div class="notify_content">
-                                            <a href="index.html#"><h5>Awesome packages</h5></a>
-                                            <p>Lorem ipsum dolor sit amet</p>
-                                        </div>
-                                    </div>
-                                    <!-- single_notify  -->
-                                    <div class="single_notify d-flex align-items-center">
-                                        <div class="notify_thumb">
-                                            <a href="index.html#"><img src="img/staf/3.png" alt=""></a>
-                                        </div>
-                                        <div class="notify_content">
-                                            <a href="index.html#"><h5>what a packages</h5></a>
-                                            <p>Lorem ipsum dolor sit amet</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="nofity_footer">
-                                    <div class="submit_button text-center pt_20">
-                                        <a href="index.html#" class="btn_1">See More</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--/ Menu_NOtification_Wrap  -->
-                            </li>
-                            <li>
-                                <a class="CHATBOX_open" href="index.html#"> <img src="img/icon/msg.svg" alt=""> <span>2</span>  </a>
-                            </li>
-                        </div>
-                        <div class="profile_info">
-                            <img src="img/client_img.png" alt="#">
-                            <div class="profile_info_iner">
-                                <div class="profile_author_name">
-                                    <p>Neurologist </p>
-                                    <h5>Dr. Robar Smith</h5>
-                                </div>
-                                <div class="profile_info_details">
-                                    <a href="index.html#">My Profile </a>
-                                    <a href="index.html#">Settings</a>
-                                    <a href="index.html#">Log Out </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--/ menu  -->
+        
     <div class="main_content_iner overly_inner ">
         <div class="container-fluid p-0 ">
             <!-- page title  -->
@@ -138,7 +12,7 @@
                         <div class="page_title_left d-flex align-items-center">
                             <h3 class="f_s_25 f_w_700 dark_text mr_30" >Dashboard</h3>
                             <ol class="breadcrumb page_bradcam mb-0">
-                                <li class="breadcrumb-item"><a href="javascript:void(0);">Home</a></li>
+                                <li class="breadcrumb-item"><a href="./index.php">Home</a></li>
                                 <li class="breadcrumb-item active">Analytic</li>
                             </ol>
                         </div>
@@ -1221,7 +1095,7 @@
         </div>
     </div>
 
-<!-- footer part -->
+
 <div class="footer_part">
     <div class="container-fluid">
         <div class="row">

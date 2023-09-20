@@ -16,15 +16,15 @@
     <div class="register-photo">
         <div class="form-container">
             <div class="image-holder"></div>
-            <form action="./controller//loginUser.php" method="POST">
+            <form action="./controller/loginUser.php" method="POST">
                 <h2 class="text-center"><strong>Login</strong> System</h2>
                 <div class="form-group">
                     <input class="form-control" name="email" type="text" placeholder="Enter Email">
-                    <span class="text-danger"><?= isset($_SESSION['loginError']['email_error']) ? $_SESSION['loginError']['email_error'] : ''?></span>
+                    <span class="text-danger"><?= isset($_SESSION['login_error']['email_error']) ? $_SESSION['login_error']['email_error'] : ''?></span>
                 </div>
                 <div class="form-group">
                     <input class="form-control" name="password" type="text" placeholder="Enter Password">
-                    <span class="text-danger"><?= isset($_SESSION['loginError']['password_error']) ? $_SESSION['loginError']['password_error'] : ''?></span>
+                    <span class="text-danger"><?= isset($_SESSION['login_error']['password_error']) ? $_SESSION['login_error']['password_error'] : ''?></span>
                 </div>
                 <div class="form-group">
                     <button class="btn btn-primary " type="submit">Login</button>
