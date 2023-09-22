@@ -26,23 +26,24 @@ include './backend_inc/backendHeader.php';
             </div>
             <!-- Profile from -->
             <div class="row">
-                <div class="col-lg-8">
-                    <div class="row">
-                    <div class="col-lg-4">
                         
-                        <label for="profileImage">
-                            <img style="width: 250px; height:250px;"  src="https://api.dicebear.com/7.x/initials/svg?seed=<?= $_SESSION['auth']['name']?>" alt="#" class="profile_image">
-                        </label>
-                        <input type="file" name="" id="profileImage" class="select_profile_img">
-                    </div>
-                    <div class="col-lg-8">
-                        <form action="">
-                            <input type="text" name="name" value="<?=$_SESSION['auth']['name']?>" class="form-control mt-4">
-                            <input type="text" name="email" value="<?=$_SESSION['auth']['email']?>" class="form-control mt-4">
-                            <button class="btn btn-primary btn-sm">Submit</button>
-                        </form>
-                    </div>
-                    </div>
+                <div class="col-lg-8">
+                    <form action="../controller/profileUpdate.php" method="POST" enctype="multipart/form-data">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <label for="profileImage">
+                                    <img style="width: 250px; height:250px;"  src="https://api.dicebear.com/7.x/initials/svg?seed=<?= $_SESSION['auth']['name']?>" alt="#" class="profile_image">
+                                </label>
+                                <input  type="file" name="profileImg" id="profileImage" class="select_profile_img">
+                            </div>
+                            <div class="col-lg-8">
+                                
+                                    <input type="text" name="name" value="<?=$_SESSION['auth']['name']?>" class="form-control mt-4">
+                                    <input type="text" name="email" value="<?=$_SESSION['auth']['email']?>" class="form-control mt-4">
+                                    <button class="btn btn-primary btn-sm">Submit</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 <div class="col-lg-4">
                 <form action="">

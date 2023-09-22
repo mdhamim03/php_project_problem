@@ -322,7 +322,9 @@
                         <div class="profile_info">
                           <div class="row">
                           <h4><?=$_SESSION['auth']['name']?></h4>
-                            <img src="https://api.dicebear.com/7.x/initials/svg?seed=<?= $_SESSION['auth']['name']?>" alt="#">
+
+                            <img src="<?= isset($_SESSION['auth']['profile']) ? "../uploades/user".$_SESSION['auth']['profile'] : "https://api.dicebear.com/7.x/initials/svg?seed=<?=" .$_SESSION['auth']['name']?> " alt="#">
+
                           </div>
                             <div class="profile_info_iner">
                                 <div class="profile_author_name">
