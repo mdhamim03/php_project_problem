@@ -33,7 +33,7 @@ if(count($errors) >0){
     //session update
     $_SESSION['auth']['name'] = $name;
     $_SESSION['auth']['email'] = $email;
-    $_SESSION['auth']['profile'] = $fileName;
+    $_SESSION['auth']['profile_img'] = $fileName;
     header('location:../backend/profile.php');
     }
 

@@ -66,6 +66,7 @@
 <script src="vendors/chart_am/animated.js"></script>
 <script src="vendors/chart_am/kelly.js"></script>
 <script src="vendors/chart_am/chart-custom.js"></script>
+<script src="../js/all.min.js"></script>
 <!-- custom js -->
 <script src="js/dashboard_init.js"></script>
 <script src="js/custom.js"></script>

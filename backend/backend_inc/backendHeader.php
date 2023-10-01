@@ -50,6 +50,7 @@
     <!-- menu css  -->
     <link rel="stylesheet" href="css/metisMenu.css">
     <!-- style CSS -->
+    <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/colors/default.css" id="colorSkinCSS">
 </head>
@@ -62,7 +63,7 @@
  <!-- sidebar  -->
 <nav class="sidebar">
     <div class="logo d-flex justify-content-between">
-        <a class="large_logo" href="index.html"><img src="img/logo.png" alt=""></a>
+        <a class="large_logo" href="./index.php"><img src="img/logo.png" alt=""></a>
         <a class="small_logo" href="index.html"><img src="img/mini_logo.png" alt=""></a>
         <div class="sidebar_close_icon d-lg-none">
             <i class="ti-close"></i>
@@ -70,142 +71,41 @@
     </div>
     <ul id="sidebar_menu">
         <li class="">
-            <a class="has-arrow" href="index.html#" aria-expanded="false">
+            <a class="has-arrow" href="../index.php" aria-expanded="false">
                 <div class="nav_icon_small">
                     <img src="img/menu-icon/dashboard.svg" alt="">
                 </div>
                 <div class="nav_title">
-                    <span>User Management </span>
+                    <span>Home Page </span>
                 </div>
             </a>
-            <ul>
-                <li><a href="index_2.html">Default</a></li>
-              <li><a href="index_3.html">Dark Sidebar</a></li>
-              <li><a href="index.html">Light Sidebar</a></li>
-            </ul>
         </li>
         <li class="">
-            <a class="has-arrow" href="index.html#" aria-expanded="false">
+            <a class="has-arrow" href="#" aria-expanded="false">
                 <div class="nav_icon_small">
                     <img src="img/menu-icon/2.svg" alt="">
                 </div>
                 <div class="nav_title">
-                    <span>Application </span>
+                    <span>Banner </span>
                 </div>
             </a>
             <ul>
-              <li><a href="editor.html">editor</a></li>
-              <li><a href="mail_box.html">Mail Box</a></li>
-              <li><a href="chat.html">Chat</a></li>
-              <li><a href="faq.html">FAQ</a></li>
+                <li><a href="./AddBanner.php">Add Banner</a></li>
+                <li><a href="./AllBanner.php">All Banner</a></li>
+              <li><a href="index_3.html">Edit Banner</a></li>
             </ul>
         </li>
         <li class="">
-            <a   class="has-arrow" href="index.html#" aria-expanded="false">
-              <div class="nav_icon_small">
-                <img src="img/menu-icon/3.svg" alt="">
-            </div>
-            <div class="nav_title">
-                <span>Pages</span>
-            </div>
-            </a>
-            <ul>
-              <li><a href="login.html">Login</a></li>
-              <li><a href="resister.html">Register</a></li>
-              <li><a href="error_400.html">Error 404</a></li>
-              <li><a href="error_500.html">Error 500</a></li>
-              <li><a href="forgot_pass.html">Forgot Password</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
-            </ul>
-        </li>
-        <li class="">
-            <a   class="has-arrow" href="index.html#" aria-expanded="false">
-              <div class="nav_icon_small">
-                <img src="img/menu-icon/4.svg" alt="">
-            </div>
-            <div class="nav_title">
-                <span>Admins</span>
-            </div>
-            </a>
-            <ul>
-              <li><a href="admin_list.html">Admin List</a></li>
-              <li><a href="add_new_admin.html">Add New Admin</a></li>
-            </ul>
-        </li>
-        <li class="">
-            <a   class="has-arrow" href="index.html#" aria-expanded="false">
-              <div class="nav_icon_small">
-                <img src="img/menu-icon/11.svg" alt="">
-            </div>
-            <div class="nav_title">
-                <span>Role & Permissions</span>
-            </div>
-            </a>
-            <ul>
-              <li><a href="module_setting.html">Module Setting</a></li>
-              <li><a href="role_permissions.html">Role & Permissions</a></li>
-            </ul>
-        </li>
-        <li class="">
-            <a  href="navs.html" aria-expanded="false">
-              <div class="nav_icon_small">
-                <img src="img/menu-icon/12.svg" alt="">
-            </div>
-            <div class="nav_title">
-                <span>Navs</span>
-            </div>
-            </a>
-        </li>
-        <li class="">
-            <a   class="has-arrow" href="index.html#" aria-expanded="false">
-              <div class="nav_icon_small">
-                <img src="img/menu-icon/5.svg" alt="">
-            </div>
-            <div class="nav_title">
-                <span>Users</span>
-            </div>
-            </a>
-            <ul>
-              <li><a href="user_list.html">Users List</a></li>
-              <li><a href="add_new_user.html">Add New User</a></li>
-            </ul>
-        </li>
-        <li>
-            <a href="Builder.html" aria-expanded="false">
+            <a class="has-arrow" href="#" aria-expanded="false">
                 <div class="nav_icon_small">
-                    <img src="img/menu-icon/6.svg" alt="">
+                    <img src="img/menu-icon/2.svg" alt="">
                 </div>
                 <div class="nav_title">
-                    <span>Builder </span>
+                    <span>Null</span>
                 </div>
             </a>
         </li>
-        <li class="">
-            <a  href="invoice.html" aria-expanded="false">
-              <div class="nav_icon_small">
-                <img src="img/menu-icon/7.svg" alt="">
-            </div>
-            <div class="nav_title">
-                <span>Invoice</span>
-            </div>
-            </a>
-        </li>
-        
-
-        <li class="">
-          <a   class="has-arrow" href="index.html#" aria-expanded="false">
-            <div class="nav_icon_small">
-                <img src="img/menu-icon/12.svg" alt="">
-            </div>
-            <div class="nav_title">
-                <span>Maps</span>
-            </div>
-          </a>
-          <ul>
-            <li><a href="mapjs.html">Maps JS</a></li>
-            <li><a href="vector_map.html">Vector Maps</a></li>
-          </ul>
-        </li>
+    
 
 
       </ul>
@@ -323,7 +223,8 @@
                           <div class="row">
                           <h4><?=$_SESSION['auth']['name']?></h4>
 
-                            <img src="<?= isset($_SESSION['auth']['profile']) ? "../uploades/user".$_SESSION['auth']['profile'] : "https://api.dicebear.com/7.x/initials/svg?seed=<?=" .$_SESSION['auth']['name']?> " alt="#">
+                            <img src="<?= isset($_SESSION['auth']['profile_img']) ? "../uploades/user/".$_SESSION['auth']['profile_img'] : "https://api.dicebear.com/7.x/initials/svg?seed=<?=" .$_SESSION['auth']['name']?> " style="width:100px;height:100px;border-redious:50%" alt="#">
+
 
                           </div>
                             <div class="profile_info_iner">

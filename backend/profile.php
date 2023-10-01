@@ -32,7 +32,7 @@ include './backend_inc/backendHeader.php';
                         <div class="row">
                             <div class="col-lg-4">
                                 <label for="profileImage">
-                                    <img style="width: 250px; height:250px;"  src="https://api.dicebear.com/7.x/initials/svg?seed=<?= $_SESSION['auth']['name']?>" alt="#" class="profile_image">
+                                    <img style="width: 250px; height:300px;"  src="<?= isset($_SESSION['auth']['profile_img']) ? "../uploades/user/".$_SESSION['auth']['profile_img'] : "https://api.dicebear.com/7.x/initials/svg?seed=<?=" .$_SESSION['auth']['name']?> " alt="#" class="profile_image">
                                 </label>
                                 <input  type="file" name="profileImg" id="profileImage" class="select_profile_img">
                             </div>
@@ -46,11 +46,13 @@ include './backend_inc/backendHeader.php';
                     </form>
                 </div>
                 <div class="col-lg-4">
-                <form action="">
-                            <input type="text" name="name" placeholder="Old Password" class="form-control mt-4">
-                            <input type="text" name="name" placeholder="New Password" class="form-control mt-4">
-                            <input type="text" name="name" placeholder="Confirm Password" class="form-control mt-4">
-                            <button class="btn btn-primary btn-sm">Submit</button>
+                <form action="../controller/updatePassword.php" method="POST">
+                            <input type="text" name="oldPassword" placeholder="Old Password" class="form-control mt-4">
+                            <span class="text-danger"><?= isset($_SESSION['foromErrors']['oldError']) ? $_SESSION['foromErrors']['oldError'] : ''?></span>
+                            <input type="text" name="Password" placeholder="New Password" class="form-control mt-4">
+                            <span class="text-danger"><?= isset($_SESSION['foromErrors']['passwordError']) ? $_SESSION['foromErrors']['passwordError'] : ''?></span>
+                            <input type="text" name="ConfirmPassword" placeholder="Confirm Password" class="form-control mt-4">
+                            <button class="btn btn-primary btn-sm">Update</button>
 
                         </form>
                 </div>
@@ -59,6 +61,7 @@ include './backend_inc/backendHeader.php';
 
 <?php
 include './backend_inc/backendFooter.php';
+unset($_SESSION['foromErrors']);
 ?>
 <script>
     let profileInput = document.querySelector('.select_profile_img')
