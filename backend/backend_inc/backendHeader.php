@@ -92,7 +92,34 @@
             <ul>
                 <li><a href="./AddBanner.php">Add Banner</a></li>
                 <li><a href="./AllBanner.php">All Banner</a></li>
-              <li><a href="index_3.html">Edit Banner</a></li>
+            </ul>
+        </li>
+        <li class="">
+            <a class="has-arrow" href="#" aria-expanded="false">
+                <div class="nav_icon_small">
+                    <img src="img/menu-icon/2.svg" alt="">
+                </div>
+                <div class="nav_title">
+                    <span>About US </span>
+                </div>
+            </a>
+            <ul>
+                <li><a href="./AddAbout.php">Add About</a></li>
+                <li><a href="./AllAbout.php">All About</a></li>
+            </ul>
+        </li>
+        <li class="">
+            <a class="has-arrow" href="#" aria-expanded="false">
+                <div class="nav_icon_small">
+                    <img src="img/menu-icon/2.svg" alt="">
+                </div>
+                <div class="nav_title">
+                    <span>Menus </span>
+                </div>
+            </a>
+            <ul>
+                <li><a href="./AddCategory.php">Add Category</a></li>
+                <li><a href="./AddFood.php">Add Food</a></li>
             </ul>
         </li>
         <li class="">
